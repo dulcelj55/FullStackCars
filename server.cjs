@@ -16,9 +16,7 @@ app.use(cors({
 app.use(express.json()); 
 app.use(morgan('dev'))
 
-app.get("/", (req, res) => {
-    res.send("here is your valuable data")
-})
+
 app.post("/vehicles", async (req,res) => {
     console.log(req.body);
     let vehicles = req.body;

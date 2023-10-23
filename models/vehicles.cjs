@@ -4,11 +4,11 @@ const mongoose= require ("mongoose")
 
 const vehiclesSchema = new mongoose.Schema(
     {
-    Owner: String,
-    Make: String,
-    Model: String,
-    Year: Number,
-    Runs: Boolean
+    owner: String,
+    make: String,
+    model: String,
+    year: Number,
+    runs: Boolean
 },
 
 {
@@ -16,3 +16,5 @@ const vehiclesSchema = new mongoose.Schema(
 }
 )
 const Vehicles = mongoose.model("Vehicles",  vehiclesSchema)
+
+module.exports= Vehicles
