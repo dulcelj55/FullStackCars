@@ -8,7 +8,8 @@ const NewCar = () => {
     make:"",
     model:"",
     year:"",
-    runs:false
+    runs:false,
+    image: ""
    })
 
    const handleSubmit = (e) => {
@@ -22,6 +23,14 @@ const NewCar = () => {
         console.log(res);
        
     })
+    setVehicleData({
+      owner:"",
+      make:"",
+      model:"",
+      year:"",
+      runs: false,
+      image: ""
+     })
 }
 
 
@@ -34,7 +43,7 @@ const NewCar = () => {
         Model:<input type="text" name="model" value={vehicleData.model} onChange={(e) => setVehicleData({...vehicleData,  model:e.target.value})}/>
         Year:<input type="number" name="Year" value={vehicleData.year} onChange={(e) => setVehicleData({...vehicleData,  year:e.target.value})}/>
         Runs:<input type="checkbox" name="Runs" value={vehicleData.runs} onChange={(e) => setVehicleData({...vehicleData,  runs:e.target.value})}/>
-
+        Image: <input type="text" name="image"  value={vehicleData.image} onChange={(e) => setVehicleData({...vehicleData,  image:e.target.value})}/>
       <button>Create Entry</button>
 
 

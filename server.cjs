@@ -26,6 +26,16 @@ app.post("/vehicles", async (req,res) => {
 })
 
 
+app.get("/vehicles", async (req, res) => {
+    let vehiclesFromDB = await Vehicles.find();
+    res.send(vehiclesFromDB);
+})
+app.get("/vehicles/vehiclesName", async (req, res) => {
+    let vehiclesFromDB = await Vehicles.find();
+    res.send(vehiclesFromDB);
+})
+
+
 
 
 app.listen(PORT, ()=>{

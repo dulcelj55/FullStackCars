@@ -4,6 +4,9 @@ import {Routes, Route, Link} from "react-router-dom"
 import AllCars from './Pages/AllCars'
 import NewCar from './Pages/NewCar'
 import SingleCar from './Pages/SingleCar'
+import mater from '/src/assets/materpic.jpeg'
+import Navbar from './components/Navbar'
+
 
 
 
@@ -14,27 +17,13 @@ function App() {
     <>
     
     <h1 id="h1">DJ's Auto Shop</h1>
-    <nav id="navbar">
-    <Link to="/">
-        Home
-      </Link>
-      
-      <Link to="/allcars">
-        All Cars
-      </Link>
-      <Link to="/newcar">
-        New Car Regestration
-      </Link>
-      <Link to="/singlecar">
-        Single Car
-      </Link>
-    </nav>
+    <br/>
+    <Navbar/>
+    <img id="mater" src= {mater} alt="mater image" height="300" width= "300"/>
 <Routes>
-<Route path='/' element= {<AllCars/>}/>
+<Route path='/allcars' element= {<AllCars/>}/>
 <Route path='/newcar' element= {<NewCar/>}/>
 <Route path='/singlecar' element= {<SingleCar/>}/>
-
-
 </Routes>
 
 

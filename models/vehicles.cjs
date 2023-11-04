@@ -8,7 +8,8 @@ const vehiclesSchema = new mongoose.Schema(
     make: String,
     model: String,
     year: Number,
-    runs: Boolean
+    runs: Boolean,
+    image: String
 },
 
 {

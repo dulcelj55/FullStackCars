@@ -20,13 +20,15 @@ const AllCars = () => {
 
 
   return (
-    <div>Show all cars:
-        {vehicle.map((frutit)=>
+    <div> Show All Cars:
+        {vehicle.map((vehicle) =>
         <div key={JSON.stringify(vehicle)}>
-            {vehicle.owner}
-            {vehicle.make}
-            {vehicle.model}
+             {/* <br/> */}
+            {vehicle.make}<br/>
+            {vehicle.model}<br/>
+           {vehicle.owner}
             {vehicle.runs}
+            {vehicle.image}
             
             </div>)}
 

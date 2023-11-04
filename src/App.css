@@ -1,8 +1,23 @@
-h1{
+*{
+  background-color: lightblue;
+}
+
+#h1{
   text-align: center;
 }
 #navbar{
   display:flex;
   align-items: center;
   justify-content: space-around;
+}
+
+#mater{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  
+  
 }
